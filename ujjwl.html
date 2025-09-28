@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time pass</title>
-    <link rel="icon" href="/pexels-quentin-martinez-2147503099-29964436.jpg">
+    <link rel="icon" href="/pexels-quentin-martinez-2147503099-29964436.jpg" />
     <style>
       ::-webkit-scrollbar {
-  display: none; /* Chrome, Edge, Safari */
-}
-      html{
+        display: none; /* Chrome, Edge, Safari */
+      }
+      html {
         scroll-behavior: smooth;
       }
       * {
@@ -21,7 +21,7 @@
         color: #000;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
-          background-color: whitesmoke;
+        background-color: whitesmoke;
       }
       nav {
         display: flex;
@@ -78,7 +78,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        
+
         margin-top: 30px;
         padding: 0 10px;
       }
@@ -106,7 +106,7 @@
         border-radius: 20px;
         font-size: 20px;
       }
-      #contact{
+      #contact {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -114,10 +114,10 @@
         flex-direction: column;
         color: white;
       }
-      #contact-head{
+      #contact-head {
         text-align: center;
       }
-      #complain-box{
+      #complain-box {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -127,7 +127,7 @@
         box-shadow: 0px 0px 15px black;
         border-radius: 20px;
       }
-      #complain-box textarea{
+      #complain-box textarea {
         padding: 20px;
         border-radius: 20px;
         outline: none;
@@ -135,10 +135,10 @@
         width: 500px;
         margin-top: 20px;
       }
-      #complain-box textarea::placeholder{
+      #complain-box textarea::placeholder {
         font-size: larger;
       }
-      #complain-box button{
+      #complain-box button {
         width: 15rem;
         margin: 10px auto;
         padding: 20px;
@@ -147,10 +147,91 @@
         border-radius: 10px 20px;
         background-color: rgba(30, 217, 255, 0.365);
         color: white;
-        font-weight:900 ;
+        font-weight: 900;
         font-size: 15px;
       }
+      #service-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #service-head h1 {
+        font-weight: 900;
+        color: white;
+      }
+      #service-head h3 {
+        font-weight: 700;
+        color: white;
+      }
+      #service-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
 
+        margin-top: 30px;
+        padding: 0 10px;
+      }
+      .service-card {
+        border: solid gray;
+        border-radius: 20px;
+        gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        flex: 1 1 250px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      #about-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #about-head h1{
+        font-weight: 900;
+        color: white;
+      }
+      #about-head h3{
+        font-weight: 700;
+        color: white;
+      }
+      #about-story {
+        margin:40px auto ;
+        border: solid white;
+        border-radius: 20px 50px;
+        width: 700px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-weight: 900;
+      }
+      #about-story h2{
+        margin: 20px;
+      }
+      #about-cards{
+         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        margin-top: 30px;
+        padding: 0 10px;
+      }
+      .about-card{
+        border: solid gray;
+        border-radius: 20px;
+        gap: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        flex: 1 1 250px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -159,7 +240,7 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#contact">Contect</a></li>
-        <li><a href="#sevice">Service</a></li>
+        <li><a href="#service">Service</a></li>
         <li><a href="#about">About us</a></li>
       </ul>
     </nav>
@@ -233,7 +314,7 @@
           <p>Car price: 200,000$</p>
           <button>learn more..</button>
         </div>
-        </div>
+      </div>
     </section>
     <section id="contact">
       <div id="contact-head">
@@ -243,8 +324,106 @@
       </div>
       <div id="complain-box">
         <h2>complain here..</h2>
-        <textarea name="" rows="20" id="" placeholder="Type your complain"></textarea>
+        <textarea
+          name=""
+          rows="20"
+          id=""
+          placeholder="Type your complain"
+        ></textarea>
         <button>Submit complain</button>
+      </div>
+    </section>
+    <section id="service">
+      <div id="service-head">
+        <h1>OUR PREMIUM SERVICES</h1>
+        <h3>Complete automotive solutions for your luxury vehicles</h3>
+      </div>
+      <div id="service-cards">
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+        <div class="service-card">
+          <h1>Most popular service</h1>
+          <h3>Full service of your luxury car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            distinctio ea amet tempora id non ab autem recusandae iste vero
+            maxime sed quisquam aut nisi similique, delectus tempore ullam
+            natus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div id="about-head">
+        <h1>ABOUT THE CAR SHOW</h1>
+      <h3>Your premier destination for luxury automobiles and exceptional service</h3>
+      </div>
+      <div id="about-story">
+        <h2>OUR STORY</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit pariatur iure totam voluptatibus, nulla dolorum animi maiores dolor atque eos accusantium sit fuga esse. Dolorem dolorum quas, reprehenderit quasi a praesentium ratione ex quisquam quae itaque, debitis et culpa cum fugit blanditiis in facere officiis quam exercitationem iure repellat laudantium. Eaque incidunt unde inventore eius modi eveniet sunt, quas porro minima earum vitae magni labore nostrum illum quasi! Nulla nam quisquam temporibus provident nobis quidem dolores, fugit exercitationem voluptates? Architecto temporibus, iure natus reiciendis libero necessitatibus ipsam repellendus. Voluptate dolorum dolores excepturi, velit laboriosam quidem, voluptatibus mollitia inventore pariatur nemo exercitationem iste eos iure quasi? Voluptates perferendis repellendus quos ipsa. Minima magni ut molestiae obcaecati repellendus ea architecto atque perspiciatis deleniti commodi consequuntur, nulla blanditiis soluta. Cumque voluptate quae, nam repudiandae incidunt quasi corporis quidem esse odio aperiam. Exercitationem ex repellendus tempora sapiente veniam repudiandae natus a nostrum obcaecati ut reprehenderit suscipit minus iste delectus, ea, reiciendis consequatur amet. Fugiat fuga saepe ab impedit. Ducimus voluptate ipsum numquam similique fugit, aliquam optio, autem at ullam nihil neque? Cupiditate expedita ullam commodi amet aspernatur aliquid, recusandae, rem delectus doloribus alias at harum autem labore quibusdam, accusantium nobis quisquam quis sequi ut.</p>
+      </div>
+      <div id="about-cards">
+        <div class="about-card">
+            <h1>5+</h1>
+            <p>Years of Business</p>
+        </div>
+        <div class="about-card">
+            <h1>2000+</h1>
+            <p>Cars sold</p>
+        </div>
+        <div class="about-card">
+            <h1>80%</h1>
+            <p>Customers Satifection</p>
+        </div>
+        
       </div>
     </section>
   </body>
